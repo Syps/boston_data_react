@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import StoryHeader from './components/storyheader'
+import StoryFooter from './components/storyfooter'
 import ScatterPlot from './components/scatter'
 import BarChart from './components/barchart'
 import MapContainer from './components/mapcontainer'
@@ -110,9 +112,14 @@ export default class BostonStory extends Component {
 
     const chartDimens = this.getSimpleChartDimens()
 
+    const heading = 'Poverty and Crime in Boston'
+    const subheading = 'January 1 - August 10, 2015'
+    const githubLink = 'https://github.com/Syps/boston_data'
+
     return (
 
       <div>
+        <StoryHeader heading={ heading } subheading={ subheading }/>
         <div className="container">
 
           <div className="row">
@@ -193,7 +200,7 @@ export default class BostonStory extends Component {
                 <br />
             </div>
           </div>
-
+          <StoryFooter githubLink={ githubLink } />
 
       </div>
 
