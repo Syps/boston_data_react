@@ -13,7 +13,7 @@ export default class SimpleChart extends Component {
 
   tooltipOff() {
     let {show, ...rest} = this.state.tooltip
-    this.setState({tooltip: {false, ...rest}})
+    this.setState({tooltip: {show: false, ...rest}})
   }
 
   tooltipOn(updateState) {
