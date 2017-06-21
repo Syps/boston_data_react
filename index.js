@@ -114,12 +114,13 @@ export default class BostonStory extends Component {
 
     const heading = 'Poverty and Crime in Boston'
     const subheading = 'January 1 - August 10, 2015'
+    const date = 'December 2016'
     const githubLink = 'https://github.com/Syps/boston_data'
 
     return (
 
       <div>
-        <StoryHeader heading={ heading } subheading={ subheading }/>
+        <StoryHeader heading={ heading } subheading={ subheading } date={ date }/>
         <div className="container">
 
           <div className="row">
